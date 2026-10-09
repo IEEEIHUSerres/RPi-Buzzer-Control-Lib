@@ -1,2 +1,5 @@
 .idea
-cmake-build*
+cmake-build*Makefile
+build/
+_distcheck/
+*.tar.gz

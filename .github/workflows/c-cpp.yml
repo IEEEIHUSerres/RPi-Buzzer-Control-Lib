@@ -13,6 +13,13 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
+    - name: install wiringPi
+      run: |
+        git clone --depth 1 https://github.com/WiringPi/WiringPi.git /tmp/WiringPi
+        cd /tmp/WiringPi/wiringPi
+        make
+        sudo make install
+        sudo ldconfig
     - name: configure
       run: ./configure
     - name: make
