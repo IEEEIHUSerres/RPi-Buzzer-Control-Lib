@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-24.04
 
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v7
     - name: install wiringPi
       run: |
         git clone --depth 1 https://github.com/WiringPi/WiringPi.git /tmp/WiringPi
